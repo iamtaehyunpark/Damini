@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import { clearSessionStorage, loadSessionName } from '@/lib/session';
+import { clearDashboardLocalStorage } from '@/lib/dashboard';
 
 export type WidgetType = 'memo' | 'countdown' | 'letters';
 
@@ -47,6 +48,7 @@ export default function Header({ onAddWidget }: HeaderProps) {
         <button
           onClick={() => {
             clearSessionStorage();
+            clearDashboardLocalStorage();
             if (typeof window !== 'undefined') window.location.reload();
           }}
           className="rounded-md bg-white px-2.5 py-1.5 text-xs font-medium text-gray-700 shadow-soft ring-1 ring-gray-200 hover:bg-gray-50"
