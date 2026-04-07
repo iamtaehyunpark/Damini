@@ -54,24 +54,6 @@ CREATE TABLE dashboard_layouts (
 );
 ```
 
-### Migration
-Run the SQL migration file `migrations/001_create_dashboard_layouts.sql` in your Supabase SQL editor.
-
-## Environment Variables
-
-Create a `.env.local` file with:
-```
-NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
-NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
-```
-
-## Development
-
-```bash
-npm install
-npm run dev
-```
-
 ## Key Changes for Session-Specific Layouts
 
 ### Before
