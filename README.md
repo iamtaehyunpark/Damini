@@ -54,14 +54,7 @@ CREATE TABLE dashboard_layouts (
 );
 ```
 
-## Key Changes for Session-Specific Layouts
-
-### Before
-- Dashboard layouts were stored globally in localStorage
-- All sessions shared the same widget layout
-- No real-time synchronization
-
-### After
+## Key Changes 
 - Dashboard layouts are stored per session in Supabase
 - Each session maintains its own unique widget layout
 - Real-time synchronization across all users in the same session
